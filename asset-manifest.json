@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/qendrauniversitare/static/css/main.f855e6bc.css",
+    "main.js": "/qendrauniversitare/static/js/main.35373b0b.js",
+    "static/js/453.bfc34550.chunk.js": "/qendrauniversitare/static/js/453.bfc34550.chunk.js",
+    "index.html": "/qendrauniversitare/index.html",
+    "main.f855e6bc.css.map": "/qendrauniversitare/static/css/main.f855e6bc.css.map",
+    "main.35373b0b.js.map": "/qendrauniversitare/static/js/main.35373b0b.js.map",
+    "453.bfc34550.chunk.js.map": "/qendrauniversitare/static/js/453.bfc34550.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.35373b0b.js"
+  ]
+}
