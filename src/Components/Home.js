@@ -24,7 +24,12 @@ const Home = () => {
           mb: 3,
         }}
       />
-      <Typography variant="h3" color="primary" gutterBottom>
+      <Typography
+        variant="h3"
+        color="primary"
+        gutterBottom
+        sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
+      >
         Mirë Se Vini Në Qendrën Universitare
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
@@ -60,7 +65,7 @@ const Home = () => {
         >
           Profili juaj
         </Button>
-        {/* <Button
+        <Button
           // style={{ height: "70px", width: "250px" }}
           variant="contained"
           color="error"
@@ -68,7 +73,7 @@ const Home = () => {
           to="https://uamd.pitagora.rash.al/login"
         >
           Regjistrohu në sistem
-        </Button> */}
+        </Button>
       </Stack>
     </Box>
   );
