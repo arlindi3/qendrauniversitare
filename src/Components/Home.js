@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Stack, Avatar } from "@mui/material";
+import { Box, Typography, Button, Stack, Avatar, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
@@ -32,49 +32,63 @@ const Home = () => {
       >
         Mirë Se Vini Në Qendrën Universitare
       </Typography>
-      <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
-        Zbuloni klube, ngjarje dhe sesione trajnimi për të përmirësuar përvojën
-        tuaj në universitet.
-      </Typography>
+      <Grid container spacing={2} sx={{ maxWidth: 600 }}>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
+          Zbuloni klube, ngjarje dhe sesione trajnimi për të përmirësuar
+          përvojën tuaj në universitet.
+        </Typography>
 
-      <Stack direction="row" spacing={2}>
-        <Button
-          // style={{ height: "70px", width: "250px" }}
-          variant="contained"
-          color="primary"
-          component={Link}
-          to="/clubs"
-        >
-          Eksploro Klubet
-        </Button>
-        <Button
-          // style={{ height: "70px", width: "250px" }}
-          variant="contained"
-          color="success"
-          component={Link}
-          to="/events"
-        >
-          Shiko Eventet
-        </Button>
-        <Button
-          // style={{ height: "70px", width: "250px" }}
-          variant="contained"
-          color="warning"
-          component={Link}
-          to="/profile"
-        >
-          Profili juaj
-        </Button>
-        <Button
-          // style={{ height: "70px", width: "250px" }}
-          variant="contained"
-          color="error"
-          component={Link}
-          to="https://uamd.pitagora.rash.al/login"
-        >
-          Regjistrohu në sistem
-        </Button>
-      </Stack>
+        {/* <Stack direction="row" spacing={2}> */}
+        <Grid item xs={12} sm={6}>
+          <Button
+            // style={{ height: "70px", width: "250px" }}
+            variant="contained"
+            fullWidth
+            color="primary"
+            component={Link}
+            to="/clubs"
+          >
+            Eksploro Klubet
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Button
+            // style={{ height: "70px", width: "250px" }}
+            variant="contained"
+            fullWidth
+            color="success"
+            component={Link}
+            to="/events"
+          >
+            Shiko Eventet
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Button
+            // style={{ height: "70px", width: "250px" }}
+            variant="contained"
+            fullWidth
+            color="warning"
+            component={Link}
+            to="/profile"
+          >
+            Profili juaj
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Button
+            // style={{ height: "70px", width: "250px" }}
+            variant="contained"
+            fullWidth
+            color="error"
+            component={Link}
+            to="https://uamd.pitagora.rash.al/login"
+          >
+            Regjistrohu në sistem
+          </Button>
+        </Grid>
+      </Grid>
+      {/* </Stack> */}
     </Box>
   );
 };
